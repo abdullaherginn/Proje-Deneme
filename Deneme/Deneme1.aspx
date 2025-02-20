@@ -3,9 +3,9 @@
     <form id="form1" runat="server">
         <asp:DataList ID="DataList1" runat="server">
             <ItemTemplate>
-                <asp:Label ID="Label2" runat="server" Text='<%# Eval("CarID") %>'></asp:Label>
+                <asp:Label ID="Label7" runat="server" Text='<%# Eval("CarModel") %>'></asp:Label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="Label1" runat="server" Text='<%# Eval("CarBrandID") %>'></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text='<%# Eval("BrandName") %>'></asp:Label>
                 <table class="nav-justified">
                     <tr>
                         <td>

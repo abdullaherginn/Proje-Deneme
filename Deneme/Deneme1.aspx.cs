@@ -13,7 +13,14 @@ namespace Deneme
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand commandList = new SqlCommand("Select * From TableCar where CarConfirmation=pcon", SqlConnectionClass.connection);    
+            SqlCommand commandList = new SqlCommand("Select * From TableCar inner join TableBrand on TableCar.CarBrandId = TableBrand.BrandID where CarConfirmation=@pcon", SqlConnectionClass.connection);
+
+            SqlConnectionClass.Checkconnection();
+            commandList.Parameters.AddWithValue("@pcon", true);
+            SqlDataReader dr = commandList.ExecuteReader();
+            DataList1.DataSource = dr;
+            DataList1.DataBind();
+
         }
     }
 }
