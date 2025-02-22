@@ -35,7 +35,18 @@ namespace Deneme
 
         protected void BtnEkle_Click(object sender, EventArgs e)
         {
+            SqlCommand commandAdd = new SqlCommand("Insert into TableCar (CarModel, CarBrandID, CarFuelType,CarDescription,CarContact,CarSeller, CarPhoto, CarPrice) values (@pmodel, @pbrand, @pfuel, @pdes, @pcontact, @pseller,@pphoto,@pprice)", SqlConnectionClass.connection);
 
+            commandAdd.Parameters.AddWithValue("@pmodel",TextModel.Text);
+            commandAdd.Parameters.AddWithValue("@pbrand", Convert.ToInt32(combobox.SelectedValue));
+            commandAdd.Parameters.AddWithValue("@pfuel",TextYakit.Text);
+            commandAdd.Parameters.AddWithValue("@pdes",TextDescription.Text);
+            commandAdd.Parameters.AddWithValue("@pcontact",Textİletisim.Text);
+            commandAdd.Parameters.AddWithValue("@pseller", TextSatici.Text);
+            commandAdd.Parameters.AddWithValue("@pphoto",TextFoto.Text);
+            commandAdd.Parameters.AddWithValue("@pprice",TextFiyat.Text);
+
+            commandAdd.ExecuteNonQuery();
         }
     }
 }

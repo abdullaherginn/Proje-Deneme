@@ -20,7 +20,7 @@ namespace Deneme
             SqlDataReader dr = commandList.ExecuteReader();
             DataList1.DataSource = dr;
             DataList1.DataBind();
-
+            dr.Close();
         }
     }
 }
