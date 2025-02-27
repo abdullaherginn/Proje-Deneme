@@ -33,7 +33,14 @@ namespace Deneme
             da.Fill(dt);
             if (dt.Rows.Count > 0)
             {
-                Response.Write("Giriş Yapıldı");
+                if (tboxMail.Text== "a@gmail.com")
+                {
+                    Response.Redirect("AdminLogin.aspx");
+                }
+                else
+                {
+                    
+                }
             }
             else {
                 Response.Write("Şifre Yada Kullanıcı Adı Hatalı!");

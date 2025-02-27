@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPanel.master.cs" Inherits="Deneme.AdminPanel" %>
+
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <title>Bootstrap Example</title>
@@ -13,13 +15,11 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">WebSiteName</a>
+                <a class="navbar-brand" href="#">Araba Sat</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="Deneme1.aspx">İlanlar</a></li>
-                <li><a href="Addcars.aspx">İlan Ekleme</a></li>
-                <li><a href="Login.aspx">Giriş</a></li>
-                <li><a href="Hakkimizda.aspx">Hakkımızda</a></li>
+                <li class="active"><a href="#">İlan Onayla</a></li>
+                <li><a href="Messages.aspx">Mesajlar</a></li>
             </ul>
         </div>
     </nav>
