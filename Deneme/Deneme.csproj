@@ -68,7 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddCars.aspx" />
+    <Content Include="AdminAddCars.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="ApproveCars.aspx" />
     <Content Include="Deneme1.aspx" />
     <Content Include="Hakkimizda.aspx" />
     <Content Include="Login.aspx" />
@@ -86,6 +88,13 @@
     <Compile Include="AddCars.aspx.designer.cs">
       <DependentUpon>AddCars.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminAddCars.aspx.cs">
+      <DependentUpon>AdminAddCars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAddCars.aspx.designer.cs">
+      <DependentUpon>AdminAddCars.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,6 +108,13 @@
     </Compile>
     <Compile Include="AdminPanel.Master.designer.cs">
       <DependentUpon>AdminPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveCars.aspx.cs">
+      <DependentUpon>ApproveCars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproveCars.aspx.designer.cs">
+      <DependentUpon>ApproveCars.aspx</DependentUpon>
     </Compile>
     <Compile Include="Classes\SHA256Converter.cs" />
     <Compile Include="Classes\SqlConnectionClass.cs" />

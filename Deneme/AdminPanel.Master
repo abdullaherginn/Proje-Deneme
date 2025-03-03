@@ -18,7 +18,7 @@
                 <a class="navbar-brand" href="#">Araba Sat</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">İlan Onayla</a></li>
+                <li class="active"><a href="AdminAddcars.aspx">İlan Onayla</a></li>
                 <li><a href="Messages.aspx">Mesajlar</a></li>
             </ul>
         </div>
