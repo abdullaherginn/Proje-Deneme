@@ -33,13 +33,17 @@ namespace Deneme
             da.Fill(dt);
             if (dt.Rows.Count > 0)
             {
-                if (tboxMail.Text== "a@gmail.com")
+                if (tboxMail.Text == "a@gmail.com")
                 {
+                    Session["IsUserAdmin"] = true;
+                    Session["UserMail"] = "a@gmail.com";
                     Response.Redirect("AdminLogin.aspx");
                 }
                 else
                 {
-                    
+                    Session["IsUserOnline"] = true;
+                    Session["UserMail"] = dt.Rows[0].ToString();
+                    Response.Redirect("Deneme1.aspx");
                 }
             }
             else {

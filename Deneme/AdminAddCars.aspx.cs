@@ -13,19 +13,25 @@ namespace Deneme
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand commandList = new SqlCommand("select * from TableCar where CarConfirmation=@pcon",SqlConnectionClass.connection);
+            if (Convert.ToBoolean(Session["IsUserAdmin"]) == true)
+            {
+                SqlCommand commandList = new SqlCommand("select * from TableCar where CarConfirmation=@pcon", SqlConnectionClass.connection);
 
-            SqlConnectionClass.Checkconnection();
+                SqlConnectionClass.Checkconnection();
 
-            commandList.Parameters.AddWithValue("@pcon",false);
+                commandList.Parameters.AddWithValue("@pcon", false);
 
-            SqlDataReader dr = commandList.ExecuteReader();
+                SqlDataReader dr = commandList.ExecuteReader();
 
-            DataList1.DataSource = dr;
+                DataList1.DataSource = dr;
 
-            DataList1.DataBind();
+                DataList1.DataBind();
 
-            dr.Close();
+                dr.Close();
+            }
+            else {
+                Response.Redirect("Login.aspx");
+            }
         }
     }
 }

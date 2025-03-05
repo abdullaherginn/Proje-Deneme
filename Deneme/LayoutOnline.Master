@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LayoutOnline.master.cs" Inherits="Deneme.LayoutOnline" %>
+
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <title>Bootstrap Example</title>
@@ -21,8 +23,7 @@
                 <li><a href="Hakkimizda.aspx">Hakkımızda</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="Login.aspx">Giriş</a></li>
-                <li><a href="Register.aspx">Kayıt Ol</a></li>
+                <li><a href="Login.aspx">Çıkış Yap</a></li>
             </ul>
         </div>
     </nav>

@@ -15,11 +15,14 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Araba Sat</a>
+                <a class="navbar-brand" href="AdminLogin.aspx">Araba Sat</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="AdminAddcars.aspx">İlan Onayla</a></li>
+                <li class="active"><a href="AdminAddCars.aspx">İlan Onayla</a></li>
                 <li><a href="Messages.aspx">Mesajlar</a></li>
+            </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                <li><a href="Logout.aspx">Çıkış Yap</a></li>
             </ul>
         </div>
     </nav>

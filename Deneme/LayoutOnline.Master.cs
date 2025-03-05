@@ -7,13 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Deneme
 {
-    public partial class AdminLogin : System.Web.UI.Page
+    public partial class LayoutOnline : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Convert.ToBoolean(Session["IsUserAdmin"])==true) { 
-                
-            }
+
         }
     }
 }
